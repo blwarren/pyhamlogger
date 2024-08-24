@@ -2,7 +2,9 @@
 
 PyHamLogger is an open-source Python-based GUI application designed for logging ham radio contacts. Built with PyQt6, PyHamLogger provides a user-friendly interface to help amateur radio enthusiasts keep track of their contacts in a structured and efficient way.
 
-## Features
+This project is in very early stages of development. Do not rely upon this for reliable logging at this stage.
+
+## Features (in progress)
 
 - **Easy Logging**: Simple form to log contacts with fields for call sign, frequency, mode, signal report, and more.
 - **Customizable Views**: Sort, filter, and search your log entries with ease.

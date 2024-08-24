@@ -1,3 +1,4 @@
+import uuid
 from datetime import datetime, timezone
 from typing import Optional
 
@@ -5,6 +6,9 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class LogEntry(BaseModel):
+    entry_id: uuid.UUID = Field(
+        default_factory=uuid.uuid4, description="Unique identifier for the log entry"
+    )
     call_sign: str = Field(
         ...,
         min_length=3,
@@ -99,20 +103,3 @@ class LogEntry(BaseModel):
             return "23cm"
         else:
             return "Unknown"
-
-
-# Example usage
-log_entry = LogEntry(
-    call_sign="W5MYR",
-    frequency=14070,  # Frequency in kHz
-    mode="PSK31",
-    signal_report_received="59",
-    signal_report_sent="59",
-    qth="Houston, TX",
-    operator_name="John Doe",
-    country="United States",
-    power=100,
-    grid_square="EM10",
-    comments="First contact on 20m using new antenna",
-)
-print(log_entry)
