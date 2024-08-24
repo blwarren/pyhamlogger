@@ -12,7 +12,7 @@ def main_window(qtbot):
     return window
 
 
-def test_initial_ui_state(main_window):
+def test_initial_ui_state(main_window: MainWindow):
     """Test the initial state of the main window UI."""
     assert main_window.call_sign_input.text() == ""
     assert main_window.frequency_input.text() == ""
@@ -20,7 +20,7 @@ def test_initial_ui_state(main_window):
     assert main_window.submit_button.text() == "Log Contact"
 
 
-def test_log_contact(main_window, qtbot):
+def test_log_contact(main_window: MainWindow, qtbot):
     """Test logging a new contact through the UI."""
     # Ensure the table is initially empty
     main_window.log_view.table.setRowCount(0)
@@ -39,7 +39,7 @@ def test_log_contact(main_window, qtbot):
     assert main_window.log_view.table.item(0, 0).text() == "W5MYR"
 
 
-def test_edit_contact(main_window, qtbot):
+def test_edit_contact(main_window: MainWindow, qtbot):
     """Test editing an existing contact through the UI."""
     # Ensure the table is initially empty
     main_window.log_view.table.setRowCount(0)
