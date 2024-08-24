@@ -112,3 +112,6 @@ poetry.lock
 .DS_Store
 .AppleDouble
 .LSOv
+
+# Data files
+pyhamlogger/data
