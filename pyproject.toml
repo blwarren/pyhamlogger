@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyhamlogger"
+version = "0.1.0"
+description = "PyHamLogger is an open-source Python-based GUI application designed for logging ham radio contacts."
+authors = ["Bobby Warren <blwarren@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyqt6 = "^6.7.1"
+pydantic = "^2.8.2"
+
+[tool.ruff]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
