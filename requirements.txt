@@ -136,13 +136,13 @@ pyqt6-sip==13.10.0 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:e19d5887fa3003a635419644dfed3158cb15eb566fc27b1ed56913a5767a71dc \
     --hash=sha256:e7b1258963717cfae1d30e262bb784db808072a8a674d98f57c2076caaa50499 \
     --hash=sha256:f64183dde2af36515dab515f4301a5a8d9b3658b231769fa48fe6287dc52f375
-pyqt6==6.8.1 ; python_version >= "3.12" and python_version < "4.0" \
-    --hash=sha256:0425f9eebdd5d4e57ab36424c9382f2ea06670c3c550fa0028c2b19bd0a1d7bd \
-    --hash=sha256:2eac2267a34828b8db7660dd3cc3b3b5fd76a92e61ad45471565b01221cb558b \
-    --hash=sha256:36bf48e3df3a6ff536e703315d155480ef4e260396eb5469eb7a875bc5bb7ab4 \
-    --hash=sha256:70bad7b890a8f9e9e5fb9598c544b832d9d9d99a9519e0009cb29c1e15e96632 \
-    --hash=sha256:91d937d6166274fafd70f4dee11a8da6dbfdb0da53de05f5d62361ddf775e256 \
-    --hash=sha256:a40f878e8e5eeeb0bba995152d07eeef9375ea0116df0f4aad0a6b97c8ad1175
+pyqt6==6.9.0 ; python_version >= "3.12" and python_version < "4.0" \
+    --hash=sha256:0c8b7251608e05b479cfe731f95857e853067459f7cbbcfe90f89de1bcf04280 \
+    --hash=sha256:1cbc5a282454cf19691be09eadbde019783f1ae0523e269b211b0173b67373f6 \
+    --hash=sha256:5344240747e81bde1a4e0e98d4e6e2d96ad56a985d8f36b69cd529c1ca9ff760 \
+    --hash=sha256:6a8ff8e3cd18311bb7d937f7d741e787040ae7ff47ce751c28a94c5cddc1b4e6 \
+    --hash=sha256:d36482000f0cd7ce84a35863766f88a5e671233d5f1024656b600cd8915b3752 \
+    --hash=sha256:e344868228c71fc89a0edeb325497df4ff731a89cfa5fe57a9a4e9baecc9512b
 typing-extensions==4.13.1 ; python_version >= "3.12" and python_version < "4.0" \
     --hash=sha256:4b6cf02909eb5495cfbc3f6e8fd49217e6cc7944e145cdda8caa3734777f9e69 \
     --hash=sha256:98795af00fb9640edec5b8e31fc647597b4691f099ad75f469a2616be1a76dff
