@@ -6,8 +6,8 @@ authors = [{ name = "Bobby Warren", email = "blwarren@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
 dependencies = [
-    "pyqt6>=6.7.1,<7.0.0",
-    "pydantic>=2.8.2,<3.0.0",
+    "pyqt6>=6.11.0,<7.0.0",
+    "pydantic>=2.13.5,<3.0.0",
 ]
 
 [project.scripts]
@@ -15,8 +15,8 @@ pyhamlogger = "pyhamlogger.main:main"
 
 [dependency-groups]
 dev = [
-    "pytest>=8.3.2,<9.0.0",
-    "pytest-qt>=4.4.0,<5.0.0",
+    "pytest>=9.1.1,<10.0.0",
+    "pytest-qt>=4.5.0,<5.0.0",
 ]
 
 [tool.ruff]
