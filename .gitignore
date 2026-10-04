@@ -94,10 +94,6 @@ dmypy.json
 # Pydantic generated files
 __pydantic_model_cache__/
 
-# Poetry
-.poetry/
-poetry.lock
-
 # Env files
 .env
 .env.*

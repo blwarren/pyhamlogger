@@ -2,7 +2,7 @@ import sqlite3
 import uuid
 from pathlib import Path
 
-from models.log_entry import LogEntry
+from pyhamlogger.models.log_entry import LogEntry
 
 
 class Database:

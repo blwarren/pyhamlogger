@@ -1,6 +1,6 @@
-from models.log_entry import LogEntry
+from pyhamlogger.models.log_entry import LogEntry
 from pydantic import ValidationError
-from services.database import Database
+from pyhamlogger.services.database import Database
 
 
 class LogController:

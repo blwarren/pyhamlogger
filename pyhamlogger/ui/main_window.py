@@ -1,4 +1,4 @@
-from controllers.log_controller import LogController
+from pyhamlogger.controllers.log_controller import LogController
 from PyQt6.QtWidgets import (
     QFormLayout,
     QLineEdit,
@@ -8,8 +8,8 @@ from PyQt6.QtWidgets import (
     QVBoxLayout,
     QWidget,
 )
-from services.database import Database
-from views.log_view import LogView
+from pyhamlogger.services.database import Database
+from pyhamlogger.views.log_view import LogView
 
 
 class MainWindow(QMainWindow):

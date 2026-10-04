@@ -14,64 +14,54 @@ This project is in very early stages of development. Do not rely upon this for r
 
 ## Installation
 
-### Using Poetry
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first.
+PyHamLogger requires Python 3.12 or later (below 4.0).
 
-To install PyHamLogger using [Poetry](https://python-poetry.org/), follow these steps:
+### Install as a tool
 
-1. Clone the repository:
+From a local checkout:
 
-   ```bash
-   git clone https://github.com/blwarren/pyhamlogger.git
-   cd pyhamlogger
-   ```
+```bash
+git clone https://github.com/blwarren/pyhamlogger.git
+cd pyhamlogger
+uv tool install .
+```
 
-2. Install the dependencies:
+Alternatively, install directly from GitHub:
 
-   ```bash
-   poetry install
-   ```
+```bash
+uv tool install git+https://github.com/blwarren/pyhamlogger.git
+```
 
-3. Activate the virtual environment:
+The GitHub command requires the uv packaging changes to be present on the remote branch.
+If the command is not on your PATH after installation, run `uv tool update-shell`
+and restart your shell.
 
-   ```bash
-   poetry shell
-   ```
+### Development setup
 
-4. Run the application:
+```bash
+git clone https://github.com/blwarren/pyhamlogger.git
+cd pyhamlogger
+uv sync --locked
+uv run pyhamlogger
+```
 
-   ```bash
-   python main.py
-   ```
+`uv sync` installs the application and development dependencies into `.venv`.
+Commit `uv.lock` when dependencies change so development installs remain reproducible.
 
-### Using pip
+Run the tests and build the package with:
 
-Alternatively, you can install the dependencies using `pip`:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/blwarren/pyhamlogger.git
-   cd pyhamlogger
-   ```
-
-2. Install the dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the application:
-
-   ```bash
-   python main.py
-   ```
+```bash
+uv run pytest
+uv build
+```
 
 ## Usage
 
-After installing the dependencies, you can start the application by running:
+After installing as a tool, start the application from any directory:
 
 ```bash
-python main.py
+pyhamlogger
 ```
 
 ## Contributing
